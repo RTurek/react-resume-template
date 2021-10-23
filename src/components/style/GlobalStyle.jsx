@@ -1,13 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import styledNormalize from 'styled-normalize';
-
-export const primaryFontFamily = 'Lato, sans-serif';
-
-export const COLORS = {
-  PRIMARY: '#0099ff',
-  SECONDARY: '#ff9900',
-  BLACK: '#000000'
-};
+import { PRIMARY_FONT_FAMILY, COLORS } from '../../constants/styles';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin,latin-ext&display=swap'); /* stylelint-disable-line no-invalid-position-at-import-rule */
@@ -16,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 16px;
-    font-family: ${primaryFontFamily};
+    font-family: ${PRIMARY_FONT_FAMILY};
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
     background-color: #ffffff;

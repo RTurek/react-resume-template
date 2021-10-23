@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const ResumeContainer = styled.div`
   height: 100%;
   max-width: 1000px;
-  margin: 32px;
+  margin: 40px 32px;
   display: flex;
   flex-direction: column;
 `;

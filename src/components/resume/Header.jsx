@@ -1,16 +1,45 @@
 import React from "react"
 import styled from "styled-components";
+import Typography from "../Typography";
+import { COLORS } from "../../constants/styles";
 
 const HeaderContainer = styled.header`
-  height: 100%;
-  width: 100%;
-  margin: auto;
+  height: 40px;
+  width: 100vw;
+  margin: 0px -32px;
+  background-color: #0099ff;
 `;
+
+const HeaderSolidBar = styled.div`
+  height: 40px;
+  width: 100%;
+  background-color: ${COLORS.PRIMARY};
+`;
+
+const WhiteBar = styled.div`
+  float: left;
+  background-color: ${COLORS.WHITE};
+  width: 32px;
+  height: 100%;
+  margin-left: 32px;
+`;
+
+const barTypographyStyle = {
+  position: 'relative',
+  color: COLORS.WHITE,
+  top: '11px',
+  left: '14px'
+};
+
+
 
 export default function Resume() {
   return (
     <HeaderContainer>
-      Header
+      <HeaderSolidBar>
+        <WhiteBar />
+        <Typography style={barTypographyStyle}>RESUME</Typography>
+      </HeaderSolidBar>
     </HeaderContainer>
   );
 }
