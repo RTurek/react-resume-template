@@ -31,8 +31,6 @@ const barTypographyStyle = {
   left: '14px'
 };
 
-
-
 export default function Resume() {
   return (
     <HeaderContainer>
