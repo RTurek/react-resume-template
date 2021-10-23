@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components";
-import Typography from "../Typography";
+import Typography from '@material-ui/core/Typography';
 import { COLORS } from "../../constants/styles";
 
 const HeaderContainer = styled.header`
@@ -27,7 +27,7 @@ const WhiteBar = styled.div`
 const barTypographyStyle = {
   position: 'relative',
   color: COLORS.WHITE,
-  top: '11px',
+  top: '9px',
   left: '14px'
 };
 
