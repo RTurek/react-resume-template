@@ -1,0 +1,25 @@
+/* ./src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .test-class-0000001 {
+    color: red;
+  }
+  @variants responsive {
+    .test-class-0000002 {
+      color: blue;
+    }
+  }
+  @variants dark {
+    .test-class-0000003 {
+      color: green;
+    }
+  }
+  @variants hover, focus {
+    .test-class-0000004 {
+      color: green;
+    }
+  }
+}

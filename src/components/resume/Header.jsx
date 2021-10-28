@@ -1,12 +1,11 @@
 import React from "react"
 import styled from "styled-components";
 import Typography from '@material-ui/core/Typography';
-import { COLORS } from "../../constants/styles";
+import { COLORS } from "../../styles/styles";
 
 const HeaderContainer = styled.header`
   height: 40px;
   width: 100vw;
-  margin: 0px -32px;
   background-color: #0099ff;
 `;
 
@@ -33,7 +32,7 @@ const barTypographyStyle = {
 
 export default function Resume() {
   return (
-    <HeaderContainer>
+    <HeaderContainer className="-mx-10">
       <HeaderSolidBar>
         <WhiteBar />
         <Typography style={barTypographyStyle}>RESUME</Typography>

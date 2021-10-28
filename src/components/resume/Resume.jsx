@@ -8,7 +8,6 @@ import Footer from "./Footer";
 const ResumeContainer = styled.div`
   height: 100%;
   max-width: 1000px;
-  margin: 40px 32px;
   display: flex;
   flex-direction: column;
 `;
@@ -23,7 +22,7 @@ const ColumnContainer = styled.section`
 
 export default function Resume() {
   return (
-    <ResumeContainer>
+    <ResumeContainer className="my-8 mx-10">
       <Header />
       <ColumnContainer>
         <LeftColumn />

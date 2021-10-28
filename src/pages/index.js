@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components";
 import Resume from "../components/resume/Resume"
-import GlobalStyle from "../components/style/GlobalStyle";
+import GlobalStyle from "../styles/GlobalStyle";
 
 const AppContainer = styled.div`
   height: 100%;

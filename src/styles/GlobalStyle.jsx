@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 import styledNormalize from 'styled-normalize';
-import { PRIMARY_FONT_FAMILY, COLORS } from '../../constants/styles';
+import { PRIMARY_FONT_FAMILY, COLORS } from './styles';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin,latin-ext&display=swap'); /* stylelint-disable-line no-invalid-position-at-import-rule */
+  /* @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin,latin-ext&display=swap'); stylelint-disable-line no-invalid-position-at-import-rule */
 
-  ${styledNormalize}
+  /* ${styledNormalize}
 
   body {
     font-size: 16px;
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
 
   a:focus {
     outline: ${COLORS.SECONDARY} auto 1px;
-  }
+  } */
 `;
 
 export default GlobalStyle;
