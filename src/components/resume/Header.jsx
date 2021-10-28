@@ -38,6 +38,7 @@ export default function Resume() {
         <WhiteBar />
         <Typography style={barTypographyStyle}>RESUME</Typography>
       </HeaderSolidBar>
+      <Typography>RYAN TUREK</Typography>
     </HeaderContainer>
   );
 }
